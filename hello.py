@@ -1,8 +1,7 @@
 from flask import Flask
 app = Flask(__name__)
 
-@app.route('/')
-def say_hello():
+return '<p>Welcome!</p><p><a href="/about">About this app</a></p><p><a href="/contact">Contact</a></p>'
     return '<p>Hello, World, I am a Flask app!</p><p><a href="/about">About this app</a></p><p><a href="/contact">Contact</a></p>'
 
 @app.route('/about')
@@ -11,4 +10,4 @@ def about():
 
 @app.route('/contact')
 def contact():
-    return '<p>Contact me at: your.email@example.com</p><p><a href="/">Back to home</a></p>'
+    return '<p>Contact me at: your.email@example.com</p><p><a href="/">Back to home</a></p>' 
