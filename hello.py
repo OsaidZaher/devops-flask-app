@@ -1,7 +1,7 @@
 from flask import Flask
 app = Flask(__name__)
 
-return '<p>Welcome!</p><p><a href="/about">About this app</a></p><p><a href="/contact">Contact</a></p>'
+return '<p>Welcome</p><p><a href="/about">About this app</a></p><p><a href="/contact">Contact</a></p>'
     return '<p>Hello, World, I am a Flask app!</p><p><a href="/about">About this app</a></p><p><a href="/contact">Contact</a></p>'
 
 @app.route('/about')
