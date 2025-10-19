@@ -12,3 +12,6 @@ def about():
 @app.route('/contact')
 def contact():
     return '<p>Contact me at: your.email@example.com</p><p><a href="/">Back to home</a></p>'
+
+if __name__ == "__main__":
+    app.run(debug=True, host='0.0.0.0', port=5000)
